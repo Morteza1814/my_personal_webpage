@@ -20,7 +20,7 @@ lessc --clean-css css/app.less build/app.css
 cp -r static/* build/
 
 #transfer to Bolt
-scp -r build/* ajaha004@bolt.cs.ucr.edu:public_html/
+sshpass -p "isalive" scp -r build/* as3mx@portal01.cs.virginia.edu:public_html/
 
 #delete build
 rm -rf build
