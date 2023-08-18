@@ -6,12 +6,25 @@ This is a template of my [personal website](https://www.cs.virginia.edu/~rgq5aw/
 
 Install the following packages before running the build scripts.
 ```bash
+
 apt-get install npm
 npm install pug-cli -g
 apt install node-less
 npm install -g less
 npm install -g less-plugin-clean-css
 ```
+#### To install node and npm locally:
+- wget https://nodejs.org/dist/v14.17.6/node-v14.17.6-linux-x64.tar.xz
+- tar -xvf node-v14.17.6-linux-x64.tar.xz
+- cd node-v14.17.6-linux-x64
+- mkdir ~/.npm-packages
+- npm config set prefix ~/.npm-packages
+- if npm is not recognized, add these in ~/.bashrc:
+    -- export PATH=/path/to/nodejs/bin:$PATH
+    -- export PATH=$HOME/.npm-packages/bin:$PATH
+- source ~/.bashrc
+- node -v
+- npm -v
 
 ### How to use this template
 
